@@ -1,0 +1,156 @@
+/* Общие стили */
+body {
+    margin: 0; /* Убираем внешние отступы */
+    background-color: #FFFFFF; /* Устанавливаем белый фон страницы */
+}
+
+/* Контейнер (основная область контента) */
+.container {
+    max-width: 1446px; /* Ограничиваем максимальную ширину контейнера */
+    margin: 0 auto; /* Центрируем контейнер по центру экрана */
+}
+
+/* Хедер (верхняя часть сайта) */
+.header {
+    background: #fff; /* Белый фон */
+    height: 78px; /* Высота хедера */
+    border-bottom: 1px solid #EFEFEF; /* Нижняя граница */
+    display: flex; /* Делаем элементы в хедере горизонтальными */
+    align-items: center; /* Выравниваем элементы по вертикали */
+    justify-content: center; /* Выравниваем элементы по центру */
+    margin-top: 31px; /* Отступ сверху */
+}
+
+/* Внутренний контейнер хедера */
+.header__container {
+    display: flex; /* Располагаем элементы в ряд */
+    align-items: center; /* Выравниваем элементы по вертикали */
+    width: 100%; /* Контейнер занимает всю ширину */
+}
+
+/* Логотип */
+.header__logo a {
+    font-size: 24px; /* Размер текста логотипа */
+    font-weight: bold; /* Делаем шрифт жирным */
+    color: #3D00B7; /* Фиолетовый цвет логотипа */
+    text-decoration: none; /* Убираем подчеркивание у ссылки */
+    margin-left: 120px; /* Отступ логотипа слева */
+    margin-top: 39px; /* Отступ сверху */
+    margin-bottom: 41px; /* Отступ снизу */
+    height: 29px; /* Высота логотипа */
+    width: 28px; /* Ширина логотипа */
+    font-family: 'Poppins', sans-serif; /* Указываем шрифт */
+}
+
+/* Вертикальная разделительная линия */
+.header__line {
+    width: 1px; /* Толщина линии */
+    height: 47px; /* Высота линии */
+    background-color: #F4F4F4; /* Серый цвет линии */
+    margin-left: 31px; /* Отступ линии слева */
+    margin-top: 34px; /* Отступ сверху */
+    margin-bottom: 28px; /* Отступ снизу */
+}
+
+/* Меню навигации */
+.header__menu {
+    list-style: none;   /* Убираем маркеры списка */
+    display: flex;      /* Делаем элементы меню горизонтальными */
+    gap: 47px;         /* Расстояние между пунктами меню */
+    margin-top: 47px;  /* Отступ сверху */
+    margin-bottom: 41px; /* Отступ снизу */
+    margin-left: 35px; /* Отступ слева */
+}
+
+/* Ссылки в меню */
+.header__menu a {
+    font-family: 'DM Sans'; /* Шрифт */
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+    color: #000000; /* Цвет текста */
+    font-weight: 500; /* Средняя жирность шрифта */
+    font-size: 16px; /* Размер шрифта */
+}
+
+/* Поле поиска */
+.header__search {
+    display: flex; /* Делаем поле поиска флекс-контейнером */
+    align-items: center; /* Выравниваем элементы внутри по центру */
+    width: 300px; /* Ширина поля поиска */
+    height: 50px; /* Высота поля поиска */
+    border: 2px solid #EFEFEF; /* Граница */
+    border-radius: 100px; /* Закругленные углы */
+    background-color: #FFFFFF; /* Белый фон */
+    margin-left: 80px; /* Отступ от меню */
+    margin-top: 31px; /* Отступ сверху */
+    margin-bottom: 28px; /* Отступ снизу */
+}
+
+/* Ввод текста в поле поиска */
+.header__search input {
+    border: none; /* Убираем границу */
+    outline: none; /* Убираем контур при фокусе */
+    background: transparent; /* Прозрачный фон */
+    font-size: 16px; /* Размер шрифта */
+    font-weight: 500; /* Полужирный шрифт */
+    color: #C0C0C0; /* Серый цвет текста */
+    width: 100%; /* Поле занимает всю ширину блока */
+    margin-left: 30px; /* Отступ слева */
+    margin-top: 14px; /* Отступ сверху */
+    margin-bottom: 15px; /* Отступ снизу */
+    font-family: 'DM Sans'; /* Указываем шрифт */
+}
+
+/* Иконка поиска (лупа) */
+.search-icon {
+    width: 24px; /* Ширина иконки */
+    height: 24px; /* Высота иконки */
+    margin-right: 15.25px; /* Отступ справа */
+}
+
+/* Кнопки */
+
+/* Фиолетовая кнопка */
+.btn-primary {
+    background: #3D00B7; /* Фон кнопки */
+    color: white; /* Цвет текста */
+    border: none; /* Убираем границу */
+    border-radius: 60px; /* Закругленные углы */
+    font-weight: bold; /* Жирный текст */
+    cursor: pointer; /* Меняем курсор на указатель */
+    margin-left: 20px; /* Отступ слева */
+    width: 131px; /* Ширина кнопки */
+    height: 50px; /* Высота кнопки */
+    margin-top: 31px; /* Отступ сверху */
+    margin-bottom: 28px; /* Отступ снизу */
+    font-family: 'DM Sans'; /* Шрифт */
+}
+
+/* Кнопка с белым фоном и фиолетовой границей */
+.btn-outline {
+    background: white; /* Белый фон */
+    color: #3D00B7; /* Фиолетовый цвет текста */
+    border: 2px solid #3D00B7; /* Фиолетовая граница */
+    margin-left: 20px; /* Отступ слева */
+    width: 156px; /* Ширина кнопки */
+    height: 50px; /* Высота кнопки */
+    border-radius: 60px; /* Закругленные углы */
+    margin-top: 31px; /* Отступ сверху */
+    margin-bottom: 28px; /* Отступ снизу */
+    font-family: 'DM Sans'; /* Шрифт */
+    font-weight: bold; /* Жирный текст */
+}
+
+/* Основной контейнер под главным меню */
+.main-content {
+    width: 1229px; /* Фиксированная ширина */
+    height: 440px; /* Фиксированная высота */
+    display: flex; /* Делаем блоки в ряд */
+   
+    margin: 0 auto; /* Центрируем контейнер */
+}
+
+/* Заголовок */
+
+
+
+
